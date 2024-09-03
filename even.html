@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bdy">
+    <p id="nii">QUOtes</p>
+    <span id = "gen">loading...</span>
+
+    <script>
+
+        // let arr=["your looser",""]
+        // let back = document.getElementById("bdy")
+        // back.addEventListener("click",()=>{
+        // //    document.body.style.backgroundColor="blue"
+
+
+        //    let clr="0123456789"
+        //    hex="#"
+        //    for(i=0;i<6;i++){
+        //     hex+=clr[Math.floor(Math.random()*10)]
+        //    }
+
+        //    document.body.style.background=hex
+        // })
+
+
+         
+
+        let quote = document.getElementById("nii")
+        quote.addEventListener("mouseover",()=>{
+            res=""
+            var arr=[ "your looser..","i am your losser....","...your blloper is well","navvara babu...","enti... comdey aaaa...","ala harsh ..ga click.. cheykau bro","Devara... fear song","chutammale ...song ...Bagundhi kadha..."]
+             clr="0123456789"
+            for(i=0;i<arr.length;i++){
+                res =arr[Math.floor(arr.length*Math.random())]
+                quote.innerHTML=res
+                quote.style.fontSize="60px"
+                quote.style.color=hex
+
+            }
+        })
+        
+        let  back = document.getElementById("nii")
+        back.addEventListener("mouseover",()=>{
+           let clr="0123456789"
+           hex="#"
+           for(i=0;i<6;i++){
+            hex+=clr[Math.floor(Math.random()*10)]
+           }
+
+           document.body.style.background=hex
+        })
+        
+
+       
+     
+
+       
+    </script>
+
+
+    
+</body>
+</html>
